@@ -13,18 +13,18 @@
     <div id="header">
         <div class="container">
             <nav>
-                <p class=" ">Rediet</p>
+                <p class="name-logo">Rediet</p>
                 <ul>
-                    <li><a href="#"> Home</a></li>
-                    <li><a href="#">About </a></li>
-                    <li><a href="#">Portifolio </a></li>
-                    <li><a href="#"> contact </a></li>
+                    <li><a href="#home"> Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    
+                    <li><a href="#contact"> contact </a></li>
 
                 </ul>
             </nav>
             <div class="header-text">
                 <p>Software Engineer</p>
-                <h1>Hello, I'am <br><span>Rediet Molla</span> </h1>
+                <h1><span>Hello, I'am <br>Rediet Molla</span> </h1>
                  
             </div>
         </div>
@@ -33,8 +33,100 @@
 
     <div id="about">
         <div class="container">
-            <
+            <div class="row">
+                <div class="about-col1">
+                    <img src="img/R1.png">
+                </div>
+                <div class="about-col2">
+                    <h1 class="subtitle">About me</h1>
+                    <p>
+                        This is Rediet Molla.I was born in July 17,2001 in Adama town. At the present time I am 3rd year software engineering student. in the future I want to be a great software developer who can solve many problems and make life so simple ....  
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('future-skills')">Future-Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="future-skills">
+                        <ul>
+                            <li><span>UI/UX designing</span><br>Designing Web/App interfaces </li>
+                            <li><span>Full stack development</span><br>Front-end and Back-end Development </li>
+                            <li><span>App development</span><br>Building Android/ios app</li>
+
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2005-2013</span><br>St.Merry school </li>
+                            <li><span>2014-2021</span><br>St.Joseph Catholic School </li>
+                            <li><span>2021-present</span><br>Adama Science and Technology University</li>
+
+                        </ul>
+                    </div>
+                    
+                
+        
+                </div>
+            </div>
         </div>
     </div>
+
+<script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }   
+</script>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="subtitle">Contact Me</h1>
+                <p>redietmolla22@gmail.com</p>
+                <p>+251941878329</p>
+
+                <div class="social icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href=""></a><i class="fa-brands fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+
+                </div>
+                
+
+                
+
+            </div>
+
+            <div class="contact-right">
+                <form>
+                   <input type="text" name="Name" placeholder="Your name" required>
+                   <input type="email" name="email" placeholder="Your email" required>
+                   <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                   <button type="submit" class="btn">Submit</button> 
+
+                   
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html>

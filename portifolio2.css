@@ -8,13 +8,13 @@
 
 body{
     background:#080808;
-    color:darkmagenta;
+    color:rgb(143, 33, 143);
 }
 
 #header{
     width:100%;
     height: 100vh;
-    background-image: url(img/girl1.png);
+    background-image: url(img/R3.png);
     background-size:cover;
     background-position:center;
     
@@ -35,7 +35,10 @@ nav{
 }
 .name-logo{
     width: 140px;
+    color: #4a056c;
+    font-size:xx-large;
 }
+
 
 nav ul li{
     display: inline-block;
@@ -63,9 +66,7 @@ nav ul li{
     bottom: -6px; 
     transition: 0.5s;
 
-
-
-  
+ 
  }
 
  nav ul li a:hover::after{
@@ -75,6 +76,7 @@ nav ul li{
  .header-text{
     margin-top:20% ;
     font-size: 30px;
+    color: #280228;
 
  }
 
@@ -84,11 +86,116 @@ nav ul li{
  }
 
  .header-text h1 span{
-    color: #660066;
- }
+    color: #4a056c;
+    font-family:Georgia;
+    
+}
+
+
  
-
-
-
+ 
 /*about*/
+#about{
+    padding: 80px 0;
+}
 
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.about-col1{
+    flex-basis: 35%;
+}
+.about-col1 img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+.about-col2{
+    flex-basis: 60%;
+
+}
+.subtitle{
+    font-size: 60px;
+    font-weight: 600;
+    
+    
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #df76df;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    transition:0.5s;
+}
+
+.tab-links.active-link::after{
+    width: 50%;
+    
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #df76df;
+    font-size: 14px;
+}
+
+.tab-contents {
+    display:none;
+}
+
+.tab-contents.active-tab {
+    display:block;
+
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+
+
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+form .btn{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    background: #660066;
+}
