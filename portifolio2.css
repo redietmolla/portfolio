@@ -87,7 +87,7 @@ nav ul li{
 
  .header-text h1 span{
     color: #4a056c;
-    font-family:Georgia;
+    font-family:ReduChoice;
     
 }
 
@@ -199,3 +199,11 @@ form .btn{
     cursor: pointer;
     background: #660066;
 }
+
+/* Fonts  */
+
+@font-face {
+    font-family: ReduChoice;
+    src: url('fonts/GreatVibes-Regular.ttf')  format('truetype');
+  }
+  
