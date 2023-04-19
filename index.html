@@ -5,6 +5,7 @@
 
     <title> Personal Portifolio</title>
     <link rel="stylesheet" href="portifolio2.css" />
+    <script src="https://kit.fontawesome.com/35602bce39.js" crossorigin="anonymous"></script>
 
 
 </head>
@@ -14,13 +15,15 @@
         <div class="container">
             <nav>
                 <p class="name-logo">Rediet</p>
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#home"> Home</a></li>
                     <li><a href="#about">About </a></li>
                     
                     <li><a href="#contact"> contact </a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i> 
 
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p class="random">Software Engineer</p>
@@ -40,7 +43,7 @@
                 <div class="about-col2">
                     <h1 class="subtitle">About me</h1>
                     <p>
-                        This is Rediet Molla.I was born in July 17,2001 in Adama town. At the present time I am 3rd year software engineering student. in the future I want to be a great software developer who can solve many problems and make life so simple ....  
+                        This is Rediet Molla.I was born in July 17,2001 in Adama town, Ethiopia. At the present time I am 3rd year software engineering student in Adama Science And Technology University. In the future I want to be one of the best software developer who can solve many problems and make life so simple ....  
                     </p>
                     <div class="tab-titles">
                         <p class="tab-links active-link" onclick="opentab('future-skills')">Future-Skills</p>
@@ -70,7 +73,8 @@
                 </div>
             </div>
         </div>
-    </div>
+
+        
 
 <script>
         var tablinks= document.getElementsByClassName("tab-links");
@@ -93,15 +97,15 @@
         <div class="row">
             <div class="contact-left">
                 <h1 class="subtitle">Contact Me</h1>
-                <p>redietmolla22@gmail.com</p>
-                <p>+251941878329</p>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>redietmolla22@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +251941878329</p>
 
-                <div class="social icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href=""></a><i class="fa-brands fa-telegram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-
+                <div class="social-icons">
+                    <a href=" "><i class="fab fa-facebook"></i></a>
+                    <a href=" "><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.telegram.com/Rediet2022"><i class="fab fa-telegram"></i></a>
+                    <a href="https://www.linkedin.com/in/rediet-molla-a96057258"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.github.com/redietmolla "><i class="fa-brands fa-github"></i></a>
                 </div>
                 
 
@@ -126,7 +130,25 @@
 
     </div>
 
+    <div class="copyright">
+        <p>Copyright © Made by Rediet Molla 2023 </p>
+    </div>
 </div>
+
+</div>
+
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right ="0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
 
 </body>
 </html>
